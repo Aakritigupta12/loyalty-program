@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Loyalty Program</title>
+<!-- <link href="css/custom.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="padding:0px 70px 0px 70px">
+	<h1>Loyalty Program</h1>
+	<h3>List of Customers</h3>
+	<table id="customer-table" class="table table-striped" style="width:50%">
+
+		<thead>
+			<tr>
+				<th>Customer Id</th>
+				<th>Customer Name</th>
+				<th>Customer Points</th>
+				<th>Temporary Points</th>
+				<th>Transactions</th>
+			</tr>
+		</thead>
+		<tbody id="customer-list"></tbody>
+	</table>
+	<h3>Make Transaction</h3>
+	
+		<label for="customer-id">Customer Id:</label><br> <input
+			type="text" id="customer-id" name="customer-id" autocomplete="off"><br> <label
+			for="transaction-value">Transaction Value:</label><br> <input
+			type="text" id="transaction-value" name="transaction-value" autocomplete="off"><br>
+			<label
+			for="transaction-date">Transaction Date:</label><br>
+			<input
+			type="date" id="transaction-date" name="transaction-date" autocomplete="off"><br><br>
+	
+		<button type="submit" id="transact">Make Transaction</button>
+	
+	<br>
+	<div id="transaction-div" >
+	<h3>Transaction History</h3>
+	<table id="transaction-table" class="table table-striped" style="width:50%">
+		
+		<thead>
+			<tr>
+				<th>Transaction Id</th>
+				<th>Transaction Value</th>
+				<th>Transaction Date</th>
+			</tr>
+		</thead>
+		<tbody id="transaction-list"></tbody>
+	</table>
+	</div>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
